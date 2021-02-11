@@ -1,19 +1,18 @@
 .hero {
+  // display: block;
+  background-color: #333333;
   background-repeat: no-repeat;
   background-position: center top;
+  margin-bottom: 60px;
 }
 
 .hero__title {
   // max-width: 420px;
-  padding-left: 30px;
-  padding-right: 30px;
   margin-bottom: 30px;
-
   font-family: $mainFont;
   font-weight: 900;
   font-size: 26px;
   line-height: 1.615;
-
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -70,16 +69,15 @@
   }
 
   .hero__title {
-    // max-width: 840px;
+    // max-width: 420px;
     padding-left: 170px;
     padding-right: 170px;
-    text-align: center;
   }
 }
 
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 767px),
-  screen and (min-resolution: 192dpi) and (min-width: 767px),
-  screen and (min-resolution: 2dppx) and (min-width: 767px) {
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+  screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px) {
   .hero {
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
@@ -89,13 +87,39 @@
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/hero/bg.jpg");
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-size: 1600px 600px;
+  }
+  .hero__title {
+    padding-left: 240px;
+    padding-right: 240px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+  screen and (min-resolution: 192dpi) and (min-width: 1200px),
+  screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/hero/bg@2x.jpg");
+  }
+}
+
 // .hero .container {
 //   display: block;
-// }
-
-// .hero {
-//   padding-top: 200px;
-//   padding-bottom: 200px;
 // }
 
 // .overlay {

@@ -69,13 +69,13 @@
     </section>
 
     <!-- ADVANTAGES -->
-      <!-- <section class="advantages">
+      <section class="advantages">
          <h2 class="advantages__header visually-hidden">Преимущества</h2>
          <div class="container">
             <ul class="advantages__list">
                   <li class="advantages__item">
                      <div class="thumb">
-                        <svg class="advantages__icon">
+                        <svg class="advantages__icon" width="70" height="70">
                            <use href="./images/sprite.svg#icon-antenna"></use>
                         </svg>
                      </div>
@@ -84,7 +84,7 @@
                   </li>
                   <li class="advantages__item">
                      <div class="thumb">
-                        <svg class="advantages__icon">
+                        <svg class="advantages__icon" width="70" height="70">
                            <use href="./images/sprite.svg#icon-clock"></use>
                         </svg>
                      </div>
@@ -93,7 +93,7 @@
                   </li>
                   <li class="advantages__item">
                      <div class="thumb">
-                        <svg class="advantages__icon">
+                        <svg class="advantages__icon" width="70" height="70">
                            <use href="./images/sprite.svg#icon-diagram"></use>
                         </svg>
                      </div>
@@ -102,7 +102,7 @@
                   </li>
                   <li class="advantages__item">
                      <div class="thumb">
-                        <svg class="advantages__icon">
+                        <svg class="advantages__icon" width="70" height="70">
                            <use href="./images/sprite.svg#icon-astronaut"></use>
                         </svg>
                      </div>
@@ -111,10 +111,10 @@
                   </li>
             </ul>
          </div>
-      </section> -->
+      </section>
         
     <!-- SERVICES -->
-    <!-- <section class="services">
+    <section class="services">
       <div class="container">
          <h2 class="title">Чем мы занимаемся</h2>
          <ul class="services__list">
@@ -138,15 +138,28 @@
             </li>
       </ul>
       </div>
-    </section> -->
+    </section>
 
     <!-- OUR TEAM -->
-    <!-- <section class="our__team">
+    <section class="our__team">
       <div class="container">
          <h2 class="title">Наша команда</h2>
          <ul class="members__list">
             <li class="members__list-item">
-               <img src="images/our-team/img.jpg" alt="Игорь Демьяненко - дизайнер продуктов" width="270" height="260">
+               <picture class="member__picture">
+                  <source media="(min-width: 450px)" 
+                  srcset="../images/our-team/mobile/team-member-1-mobile.webp 1x, 
+                          ../images/our-team/mobile/team-member-1-mobile@2x.webp 2x," type="image/webp">
+
+                  <source media="(min-width: 450px)" 
+                  srcset="../images/our-team/mobile/team-member-1-mobile.jpg 1x, 
+                          ../images/our-team/mobile/team-member-1-mobile@2x.jpg 2x">
+
+
+                  <img src="../images/our-team/mobile/team-member-1-mobile.jpg" alt="Игорь Демьяненко - дизайнер продуктов">
+
+               </picture>
+               <!-- <img src="images/our-team/img.jpg" alt="Игорь Демьяненко - дизайнер продуктов" width="270" height="260"> -->
                <div class="text__container">
                   <h3 class="team__member">Игорь Демьяненко</h3>
                   <p class="member__occupation" lang="en">Product Designer</p>
@@ -287,7 +300,7 @@
             </li>
          </ul>
       </div>
-    </section> -->
+    </section>
 
     <!-- CLIENTS -->
     <!-- <section class="our__clients">
